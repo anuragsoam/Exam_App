@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,200;1,300&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+.stater{
+    /* position: relative; */
+    min-height: fit-content;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stater-image{
+    /* border: 1px solid gray; */
+    box-shadow: 0px 0px 400px rgba(203, 203, 203, 0.793);
+    border-radius: 25px;
+    text-align: center;
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(205, 134, 63, 0.692);
+}
+.stater-image img{
+    margin: 0 auto;
+    margin: 30px 0px;
+    margin-bottom: 40px;
+}
+.welcome-text{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+.welcome-text span{
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 600;
+    color: black;
+}
+.welcome-text p{
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgb(133, 133, 133);
+}
+.triger{
+    margin-top: 15px;
+    position: relative;
+    text-align: center;
+}
+.triger .buttons{
+    position: relative;
+    display: flex;
+    width: -webkit-fill-available;
+    /* border: 1px solid; */
+    margin: 0px 30px;
+}
+.triger .buttons button{
+    position: absolute;
+    width: 50%;
+    padding: 15px 15px;
+    /* border: 1px solid; */
+}
+.triger .buttons .register-b{
+    background-color: white;
+    width: 51.8%;
+    z-index: 99;
+    box-shadow: inset 0px 0px 2px rgb(155, 171, 177);
+}
+.triger .buttons button:focus{
+    border-color: white;
+    outline: none;
+}
+.triger .buttons .register-b:focus{
+    z-index: 999;
+}
+.triger .buttons .login{
+    background-color: rgba(224, 224, 224, 0.628);
+    width: 50%;
+    border-left: none;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: inset 0px 0px 2px rgb(155, 171, 177);
+    right: 0;
+}
+.form-group img,
+.input-img{
+    height: 25px;
+}
+.input-group-text{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-group {
+    position: relative;
+}
+.btn-light{
+    background-color: rgb(205, 134, 63);
+    color: white;
+}
+.register{
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 90vh;
+    box-shadow: 0px 0px 20px gray;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 22px;
+    align-self: flex-end;
+    bottom: -100vh;
+    transition: all ease-in-out 0.5s;
+    z-index: 999;
+}
+.header{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    margin-bottom: 10px;
+}
+.header h3{
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 500;
+}
+.input-box{
+    margin-bottom: 40px;
+}
+.input-box:nth-child(1){
+    margin-top: 20px;
+}
+.register .button{
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    left: 0;
+    margin: 20px;
+}
+.register .button button{
+    background:rgb(205, 134, 63);
+    color: white;
+}
+.register .button button:active{
+    background: rgb(205, 134, 63);
+    color: white;
+    box-shadow: inset 0px 0px 10px rgb(194, 105, 16);
+}
+.links{
+    text-align: center;
+    font-size: small;
+    line-height: 1;
+}
+.divider{
+    display: flex;
+    padding: 0px 15px;
+    margin: 10px 0px;
+}
+.divider span{
+    padding: 0px 5px;
+}
+.divider .line{
+    height: 1px;
+    background: rgba(128, 128, 128, 0.76);
+    width: -webkit-fill-available;
+    align-self: center;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 0; 
+    margin-right: 20px;
+    margin-top: 20px;
+    z-index: 9999;
+}
+.close img{
+    height: 25px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+input[type="radio" i]{
+    margin: 3px 3px 0px 0px;
+}
+.option label{
+    padding-bottom: 10px;
+    font-size: 15.5px;
+}
+.que{
+    padding: 0px 5px;
+    display: flex;
+}
+.que p span{
+     margin: 0px 2px;
+     padding-bottom: 1.5px;
+}
+.que p{
+    text-align: justify;
+    font-size: 15.5px;
+}
+.quesation{
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+.quesation-divider{
+    border-bottom: 1px solid rgb(111, 137, 146);
+    width: 95%;
+    margin: 0 auto;
+    /* margin-bottom: 10px; */
+}
+.quesation-header{
+    display: flex;
+}
+.quesation-count{
+    min-height: 50px;
+    min-width: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    float: right;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.cancel img{
+    height: 30px;
+    width: 30px;
+    
+}
+.cancel{
+    min-height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    border-radius: 50px;
+    margin-left: 5px;
+    margin-top: 5px;
+    background: none;
+    border: none;
+}
+.cancel:target,
+.cancel:hover{
+    transition: all 0.5s;
+    background-color: rgba(193, 193, 193, 0.686);
+}
