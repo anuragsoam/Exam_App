@@ -50,7 +50,7 @@
         <div class="app">
             <div class="stater">
                 <div class="stater-image">
-                    <img src="img/undraw_mathematics_-4-otb (1).svgD alt="" height="300px" width="auto">
+                    <img src="img/undraw_mathematics_-4-otb (1).svg" alt="" height="300px" width="auto">
                 </div>
             </div>  
             <div class="content">
@@ -76,13 +76,14 @@
                 </div>
                 <div class="form-row align-items-center justify-content-center">
                     <div class="header"><h3>Welcome<br>Register Yourself</h4></div>
-                        <div class="col-auto input-box">
+                    <form action="#" onsubmit="signup();return false" id="signupForm">
+                          <div class="col-auto input-box">
                             <!-- <label class="sr-only" for="inlineFormInputGroup">Username</label> -->
                             <div class="input-group mb-2">
                               <div class="input-group-prepend">
                                 <div class="input-group-text"><img class="input-img" src="img/person_FILL0_wght400_GRAD0_opsz48.svg" alt=""></div>
                               </div>
-                              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                              <input type="text" class="form-control" id="name" placeholder="Name">
                             </div>
                         </div>
                         <div class="col-auto input-box">
@@ -113,10 +114,11 @@
                             </div>
                         </div>
                         <div class="button">
-                            <button class="btn btn-light col-12">Register</button>
+                            <button type="submit" class="btn btn-light col-12" id="register-btn">Register</button>
                             <div class="divider"><div class="line"></div><span>or</span><div class="line"></div></div>
                             <div class="links"> <p class="text-muted">if you already have a acount then <a href="">sign in</a></p></div>
                         </div>
+                    </form>
                 </div>
             </div>
             <div class="register" id="signin">
@@ -124,47 +126,32 @@
                     <img src="img/close_FILL0_wght500_GRAD0_opsz48.svg" alt="" onclick="closeBox('signin')">
                 </div>
                 <div class="form-row align-items-center justify-content-center">
-                    <div class="header"><h3>Welcome<br>Long Time</h4></div>
-                        <!-- <div class="col-auto input-box">
-                            <div class="input-group mb-2">
-                              <div class="input-group-prepend">
-                                <div class="input-group-text"><img class="input-img" src="img/person_FILL0_wght400_GRAD0_opsz48.svg" alt=""></div>
-                              </div>
-                              <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-                            </div>
-                        </div> -->
+                    <div class="header"><h3>Login<br>Welcome Back</h4></div>
+                      <form action="#" onsubmit="signIn();return false" id="signinForm">
                         <div class="col-auto input-box">
                             <!-- <label class="sr-only" for="email">Email</label> -->
                             <div class="input-group mb-2">
                               <div class="input-group-prepend">
                                 <div class="input-group-text"><img class="input-img" src="img/mail_FILL0_wght400_GRAD0_opsz48.svg" alt=""></div>
                               </div>
-                              <input type="text" class="form-control" id="email" placeholder="email">
+                              <input type="text" class="form-control" id="login-email" placeholder="email">
                             </div>
                         </div>
-                        <!-- <div class="col-auto input-box">
-                            <label class="sr-only" for="phone">Phone</label>
-                            <div class="input-group mb-2">
-                              <div class="input-group-prepend">
-                                <div class="input-group-text"><img class="input-img" src="img/call_FILL0_wght500_GRAD0_opsz48.svg" alt=""></div>
-                              </div>
-                              <input type="text" class="form-control" id="phone" placeholder="phone number">
-                            </div>
-                        </div> -->
                         <div class="col-auto input-box">
                             <!-- <label class="sr-only" for="password">Password</label> -->
                             <div class="input-group mb-2">
                               <div class="input-group-prepend">
                                 <div class="input-group-text"><img class="input-img" src="img/lock_FILL0_wght500_GRAD0_opsz48.svg" alt=""></div>
                               </div>
-                              <input type="text" class="form-control" id="password" placeholder="password">
+                              <input type="text" class="form-control" id="login-password" placeholder="password">
                             </div>
                         </div>
                         <div class="button">
-                            <button class="btn btn-light col-12">Sign In</button>
+                            <button type="submit" class="btn btn-light col-12">Sign In</button>
                             <div class="divider"><div class="line"></div><span>or</span><div class="line"></div></div>
                             <div class="links"> <p class="text-muted">if you Don't have an acount then <a href="">Register</a></p></div>
                         </div>
+                      </form>
                 </div>
             </div>
             

@@ -112,6 +112,7 @@
 }
 .register{
     position: absolute;
+    width: 100%;
     background-color: white;
     text-align: center;
     align-items: center;

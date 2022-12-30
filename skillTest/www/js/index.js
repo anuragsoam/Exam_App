@@ -26,8 +26,63 @@ function onDeviceReady() {
     console.log('Running cordova-' + cordova.platformId + '@' + cordova.version)
 }
 popForm = (pra) => {
-    $("#"+pra+"").css("bottom", "0");
+    $("#"+pra).css("bottom", "0");
 }
 closeBox = (pra) => {
-    $("#"+pra+"").css("bottom", "-100vh");
+    $("#"+pra).css("bottom", "-100vh");
+}
+var form=document.getElementById("signupForm");
+var form2=document.getElementById("signupForm"); 
+
+// function submitForm(event){
+//     //Preventing page refresh
+//     event.preventDefault();
+// }
+// form.addEventListener('load', submitForm);
+
+// function submitForm2(event){
+//     //Preventing page refresh
+//     event.preventDefault();
+// }
+// form2.addEventListener('load', submitForm2);
+
+signIn = () => {
+    if($("#login-email").val() == "" || $("#login-password").val() == ""){
+        throw console.error("please fill all the ");
+    }else{
+        let finalInput = JSON.stringify({email: $("#login-email").val(), password: $("#login-password").val()});
+        $.ajax({
+            type: "POST",
+            url: "http://127.0.0.1:82/login",
+            data: finalInput,
+            contentType: "application/json",
+            dataType: "json",
+            success: function(response) {
+                console.log(response);
+            },
+            error: function(response) {
+                console.log(response);
+            }
+        });
+    }
+}
+signup = () => {
+    if($("#name").val() == "" || $("#email").val() == "" || $("#phone").val() == "" || $("#password").val() == ""){
+        throw console.error("please fill all the ");
+    }else{
+        let finalInput = JSON.stringify({name: $("#name").val(), email: $("#email").val(), number: $("#phone").val(), password: $("#password").val()});
+        $.ajax({
+            type: "POST",
+            url: "http://127.0.0.1:82/",
+            data: finalInput,
+            contentType: "application/json",
+            dataType: "json",
+            success: function(response) {
+                console.log(response);
+            },
+            error: function(response) {
+                console.log(response);
+            }
+        });
+    }
 }
